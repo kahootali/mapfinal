@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.docdig.DoctorsActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-30dp"
+        android:layout_y="-6dp"
+        android:background="#FFFFFF" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_y="50dp"
+        android:alpha="1"
+        android:background="@drawable/textv2" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="470dp"
+        android:background="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="43dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/homelogo" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150sp"
+        android:layout_height="45sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logohell" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerHospital2"
+        android:layout_below="@+id/spinnerHospital2"
+        android:text="Choose Speciality"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:paddingTop="8dip"
+        android:textSize="14dp"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="Choose Hospital"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:paddingTop="10dp"
+        android:textSize="14dp"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/TextView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/genderSpinner"
+        android:layout_below="@+id/spinnerSpeciality2"
+        android:text="Choose Gender"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:paddingTop="8dip"
+        android:textSize="14dp"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextView01"
+        android:layout_below="@+id/genderSpinner"
+        android:text="Select Time/Date"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:paddingTop="8dip"
+        android:textSize="14dp"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/buttontime"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/buttonsearch"
+        android:layout_alignLeft="@+id/TextView02"
+        android:background="#3391E7"
+        android:text="Select Time"
+        android:textColor="#F8FBFB"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="184dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/spinnerHospital2"
+        android:layout_below="@+id/imageView1"
+        android:text="Search Doctor By Time"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFFFF"
+        android:paddingTop="12dip"        
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/TextView78"
+        android:layout_marginTop="14dp"
+        android:background="@android:drawable/btn_dropdown" />
+
+    <Spinner
+        android:id="@+id/spinnerSpeciality2"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/btn_dropdown" />
+
+    <Spinner
+        android:id="@+id/spinnerHospital2"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/btn_dropdown" />
+
+    <Button
+        android:id="@+id/buttonsearch"
+        android:layout_width="100dip"
+        android:layout_height="30dp"
+        android:layout_below="@+id/buttondate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#3391E7"
+        android:text="Search"
+        android:textColor="#F8FBFB"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/buttondate"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#3391E7"
+        android:text="Select Date"
+        android:textColor="#F8FBFB"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+   
+</RelativeLayout>
